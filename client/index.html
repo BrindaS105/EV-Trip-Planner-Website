@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EV Trip Planner ⚡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+  ⚡ EV Trip Planner
+</div>
+
+<div class="glass-container">
+
+  <div class="inputs">
+<div class="inputs">
+  <input id="start" placeholder="Enter Start City (e.g. Bangalore)">
+  <input id="end" placeholder="Enter Destination (e.g. Goa)">
+  <input id="battery" placeholder="Battery (kWh)">
+  
+  <!-- ✅ PLAN BUTTON (FIXED) -->
+  <button id="planBtn" onclick="planTrip()">Plan</button>
+</div>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="loader" class="hidden">⚡ Calculating...</div>
+
+  <div class="cards" id="results"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+C:/Program Files/Git/mingw64/libexec/git-core\git-filter-branch: line 431: del: command not found
+tree filter failed: del /f /q .env 
